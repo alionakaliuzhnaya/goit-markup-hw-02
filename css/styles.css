@@ -1,0 +1,72 @@
+.body {
+  background: #e5e5e5;
+  font-family: Roboto;
+}
+
+.logo {
+  color: black;
+}
+.logo > span {
+  color: #2196f3;
+}
+
+.links {
+  list-style: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.list-item .links:hover {
+  background-color: white;
+  color: #2196f3;
+}
+.list-item .links:focus {
+  color: #2196f3;
+}
+.contacts-list .links {
+  color: #757575;
+}
+.contacts-list .links:hover {
+  background-color: white;
+  color: #2196f3;
+}
+.contacts-list .links:focus {
+  color: #2196f3;
+}
+
+.hero {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 1600px;
+  width: 600px;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: #2f303a;
+}
+.section-title {
+  background: #2f303a;
+  color: #ffffff;
+}
+
+.buttons {
+  align-items: center;
+  text-align: center;
+  background-color: #188ce8;
+  color: #ffffff;
+}
+
+.hero .buttons:hover {
+  background-color: #188ce8;
+  color: #ffffff;
+}
+.hero .buttons:active {
+  color: #188ce8;
+}

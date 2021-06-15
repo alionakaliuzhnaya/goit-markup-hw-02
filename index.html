@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a href="#"><span>Web</span>Studio</a>
-        <ul>
-          <li><a href="index.html">Студия</a></li>
-          <li><a href="portfolio.html">Портфолио</a></li>
-          <li><a href="#">Контакты</a></li>
+    <header class="header">
+      <nav class="navigation">
+        <a href="index.html" class="logo"><span>Web</span>Studio</a>
+        <ul class="list-item">
+          <li><a class="links" href="index.html">Студия</a></li>
+          <li><a class="links" href="portfolio.html">Портфолио</a></li>
+          <li><a class="links" href="#">Контакты</a></li>
         </ul>
       </nav>
-      <ul>
+      <ul class="contacts-list">
         <li>
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a href="mailto:info@devstudio.com" class="links">info@devstudio.com</a>
         </li>
         <li>
-          <a href="tel:+380961111111">+38 096 111 11 11</a>
+          <a class="links" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
     </header>
     <main>
-      <section>
-        <h1>Эффективные решения для вашего бизнеса</h1>
-        <button type="button">Заказать услугу</button>
+      <section class="hero">
+        <h1 class="section-title">Эффективные решения для вашего бизнеса</h1>
+        <button type="button" class="buttons">Заказать услугу</button>
       </section>
       <section>
         <!--<h2>Наши преимущества</h2>-->
-        <ul>
+        <ul class="list">
           <li>
-            <h3>Внимание к деталям</h3>
-            <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+            <h3 class="advantages">Внимание к деталям</h3>
+            <p class="description">
+              Идейные соображения, а также начало повседневной работы по формированию позиции.
+            </p>
           </li>
           <li>
             <h3>Пунктуальность</h3>
@@ -58,8 +69,8 @@
         </ul>
       </section>
       <section>
-        <h2>Чем мы занимаемся</h2>
-        <ul>
+        <h2 class="subtitle">Чем мы занимаемся</h2>
+        <ul class="img">
           <li><img src="./images/code.jpg" alt="Написание кода" width="370" height="294" /></li>
           <li>
             <img
@@ -73,12 +84,12 @@
         </ul>
       </section>
       <section>
-        <h2>Наша команда</h2>
-        <ul>
+        <h2 class="subtitle">Наша команда</h2>
+        <ul class="team">
           <li>
             <img src="./images/igordem.jpg" alt="Игорь Демьяненко" width="270" height="260" />
-            <h3>Игорь Демьяненко</h3>
-            <p>Product Designer</p>
+            <h3 class="names">Игорь Демьяненко</h3>
+            <p class="function-title">Product Designer</p>
           </li>
           <li>
             <img src="./images/olharep.jpg" alt="Ольга Репина" width="270" height="260" />
