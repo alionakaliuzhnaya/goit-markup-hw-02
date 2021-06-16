@@ -1,72 +1,183 @@
-.body {
-  background: #e5e5e5;
-  font-family: Roboto;
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --accent-color: #2196f3;
+  --basic-color: #ffffff;
+  --text-color: #000000;
+  --title-color: #212121;
+  --text-color: #757575;
+  --bg-color-dark: #2f303a;
+  --bc-color-light: #f5f4fa;
 }
 
-.logo {
-  color: black;
+.list {
+  list-style: none;
 }
-.logo > span {
-  color: #2196f3;
+
+body {
+  font-family: var(--main-font);
+  background-color: var(--basic-color);
+}
+.logo-header {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  text-decoration: none;
+}
+.logo-header > span {
+  color: var(--accent-color);
 }
 
 .links {
-  list-style: none;
-  font-family: Roboto;
-  font-style: normal;
+  font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1, 14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--title-color);
+  text-decoration: none;
 }
 
-.list-item .links:hover {
-  background-color: white;
-  color: #2196f3;
+.list .links:hover,
+.list .links:focus {
+  color: var(--accent-color);
 }
-.list-item .links:focus {
-  color: #2196f3;
+
+.contact-links {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  text-decoration: none;
 }
-.contacts-list .links {
-  color: #757575;
-}
-.contacts-list .links:hover {
-  background-color: white;
-  color: #2196f3;
-}
-.contacts-list .links:focus {
-  color: #2196f3;
+
+.list .contact-links:hover,
+.list .contact-links:focus {
+  color: var(--title-color);
+  color: var(--accent-color);
 }
 
 .hero {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 1600px;
-  width: 600px;
-  font-size: 44px;
-  line-height: 60px;
+  background-color: var(--bg-color-dark);
   text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  background: #2f303a;
-}
-.section-title {
-  background: #2f303a;
-  color: #ffffff;
 }
 
+.hero-title {
+  background-color: var(--bg-color-dark);
+  color: var(--basic-color);
+  text-transform: uppercase;
+  font-size: 44px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  line-height: 1.36;
+}
 .buttons {
+  font-family: var(--main-font);
+  background-color: var(--accent-color);
+  color: var(--basic-color);
   align-items: center;
   text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1, 88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.hero .buttons:hover,
+.hero .buttons:active {
   background-color: #188ce8;
   color: #ffffff;
 }
 
-.hero .buttons:hover {
-  background-color: #188ce8;
-  color: #ffffff;
+.advantages {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
-.hero .buttons:active {
-  color: #188ce8;
+
+.advantages-description {
+  color: var(--title-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1, 71;
+  letter-spacing: 0.03em;
+}
+
+.subtitle {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1, 16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team {
+  background-color: var(--bc-color-light);
+}
+
+.names {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.position {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1, 18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+.footer {
+  background-color: var(--bg-color-dark);
+}
+
+.logo-footer {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  text-decoration: none;
+}
+.logo-footer > span {
+  color: var(--accent-color);
+}
+
+.address {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1, 71;
+  letter-spacing: 0.03em;
+  color: var(--basic-color);
+  text-decoration: none;
+}
+
+.contact-footer {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1, 71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-footer:hover,
+.contact-footer:focus {
+  color: var(--accent-color);
 }
